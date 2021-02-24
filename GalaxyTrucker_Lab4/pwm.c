@@ -34,12 +34,6 @@ void config_pwm_gpio(void){
 
 }
 
-void config_switch_interrupt(void){
-    P1->DIR &= ~BIT1; //sets p1.1 (push button) as input
-    P1->REN |= BIT1; //sets up pullup resistor config
-    P1->OUT |= BIT1; //Initially sets to 1 since it will be active low
-    P1->IE |= BIT1; //Enables interrupt functionality for P1.1
-
-    __NVIC_EnableIRQ(PORT1_IRQn);
+    __NVIC_EnableIRQ(PORT2_IRQn);
 
 }
