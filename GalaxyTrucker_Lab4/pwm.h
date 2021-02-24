@@ -23,7 +23,7 @@ void stop_pwm(void);
 
 void config_pwm_gpio(void);
 
-void config_switch_interrupt(void);
+void config_interrupt(void);
 
 
 #endif /* PWM_H_ */
