@@ -19,6 +19,10 @@ main.obj: /Applications/ti/ccs1020/ccs/ccs_base/arm/include/CMSIS/core_cm4.h
 main.obj: /Applications/ti/ccs1020/ccs/ccs_base/arm/include/CMSIS/cmsis_compiler.h
 main.obj: /Applications/ti/ccs1020/ccs/ccs_base/arm/include/CMSIS/cmsis_ccs.h
 main.obj: /Applications/ti/ccs1020/ccs/ccs_base/arm/include/system_msp432p401r.h
+main.obj: ../pwm.h
+main.obj: /Applications/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
+main.obj: /Applications/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdio.h
+main.obj: /Applications/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdarg.h
 
 ../main.c: 
 /Applications/ti/ccs1020/ccs/ccs_base/arm/include/msp.h: 
@@ -39,3 +43,7 @@ main.obj: /Applications/ti/ccs1020/ccs/ccs_base/arm/include/system_msp432p401r.h
 /Applications/ti/ccs1020/ccs/ccs_base/arm/include/CMSIS/cmsis_compiler.h: 
 /Applications/ti/ccs1020/ccs/ccs_base/arm/include/CMSIS/cmsis_ccs.h: 
 /Applications/ti/ccs1020/ccs/ccs_base/arm/include/system_msp432p401r.h: 
+../pwm.h: 
+/Applications/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h: 
+/Applications/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdio.h: 
+/Applications/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdarg.h: 
