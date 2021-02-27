@@ -48,14 +48,22 @@ void config_pwm_gpio(void){
     P2->SEL0 &= ~BIT7; //0000000000
     P2->SEL1 &= ~BIT7;// 0000000000
 
-//PIN 2.7 as input and enable interrupt
-    P2->SEL0 |= BIT5; //0000100000
+//PIN 2.5 as input and enable interrupt
+    P2->SEL0 &= ~BIT5; //0000100000
     P2->SEL1 &= ~BIT5;// 0000000000
     P2->DIR &= ~BIT5; //sets p2.7 as input 001000000
     P2->REN &= ~BIT5; //no pullup/pulldown
     P2->IES |= BIT5; //Falling edge interrupt trigger
     P2->IFG &= ~BIT5; //Clears initial interrupt flag
     P2->IE |= BIT5; //Enables interrupt functionality for P2.7
+
+
+ //Set up test LED for toggling within the Port 2 interrupt
+    P2->DIR |= BIT0; //sets p2.0 as output 000000001
+    P2->OUT &= ~BIT0; // sets bit0 to 0
+
+    P2->SEL0 &= ~BIT0; //0000000000
+    P2->SEL1 &= ~BIT0;// 0000000000
 
 
 

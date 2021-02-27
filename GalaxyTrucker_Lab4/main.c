@@ -45,13 +45,13 @@ void PORT2_IRQHandler(void){
         //Reset the R counting register
         TIMER_A1->R = 0000000000000000;
 
-
+        P2->OUT = ~(P2->OUT & BIT0);
 
     if(P2->IFG & BIT5){
         P2->IFG &= ~BIT5;
     }
 
-    __NVIC_EnableIRQ(PORT2_IRQn); //enable interrupt since we are about to exit handler
+    __NVIC_EnableIRQ(PORT6_IRQn); //enable interrupt since we are about to exit handler
 }
 
 
