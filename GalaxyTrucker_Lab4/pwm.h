@@ -10,9 +10,7 @@
 
 #include "msp.h"
 
-/*  MATH FOR TICKS: Where divider = 1
- * (3*10^6)/(2^2) = 750000 |||| 750000*(25*10^-3) = 18750 ticks ==> 0x493E in hex
- */
+
 #define TICKS0 (0x0096)
 #define TICKS1 (0x0078)
 
